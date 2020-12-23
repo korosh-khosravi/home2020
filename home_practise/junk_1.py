@@ -8,3 +8,5 @@ a = [min(width[i[0]:i[1] + 1]) for i in cases]
 print(a)
 
     # a = [width[j] for j in range(i[0], i[1])]
+
+# test git
