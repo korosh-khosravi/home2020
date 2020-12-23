@@ -1,0 +1,226 @@
+:root{
+    --main-black: black;
+    --main-white: white;
+    --main-gray: #808080;
+    --main-blue: #0066cc;
+    --main-green: #00802b;
+    --main-purple: purple;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+box-sizing:inherit;
+}
+img{
+  width: 100px;
+  height: 20px;
+  float: left;
+
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-size: 100%;
+}
+span{
+  color: white;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+body{
+    font-family:"Arabic Typesetting", serif;
+    background-color:var(--main-white);
+    color:var(--main-black);
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1rem;
+    }
+/* top-div */
+.top-div{
+  height:5vh;
+  width:100%;
+  position:fixed;
+  background-color:var(--main-black);
+  top:0;
+}
+/* top-div-link display */
+.top-div-link{
+display:block;
+float:right;
+padding:.1rem 4rem;
+margin:auto;
+justify-content: center;
+}
+/* top-div-link a' decoration*/
+.top-div-link a{
+text-decoration:none;
+font-size: 1rem;
+font-style: bold;
+color:var(--main-white);
+}
+/* top div link a hover */
+.top-div-link a:hover{
+text-decoration: underline;
+color: blue;
+}
+/* navigation map*/
+.navbar-frame{
+  margin-top:5vh;
+  width:100%;
+  height:10vh;
+  position:fixed;
+  display:flex;
+}
+/* navbar*/
+#navbar{
+display:flex;
+background-color: var(--main-gray);
+width:100%;
+flex-direction:row-reverse;
+justify-content: flex-start;
+box-shadow: 0 1px 0 hsl(255,100%,20%);
+overflow:hidden;
+
+}
+/* Style the links inside the navigation bar */
+.top-navbar a{
+float: right;
+display:block;
+color:var(--main-black);
+text-decoration:none;
+padding: 17px 25px;
+font-size: 1.5rem;
+}
+/* Add a nav-link class to highlight the current page */
+.nav-link{
+color:var(--main-black);
+background-color: var(--main-green);
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdown{
+float:right;
+overflow:hidden;
+text-align: right;
+display:block;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropbtn{
+font-size: 1.4rem;
+padding: auto auto;
+color:var(--main-black);
+background-color:inherit;
+font-family:inherit;
+ outline:0;
+  border:none;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content{
+display:none;
+overflow:hidden;
+position:absolute;
+z-index:1;
+min-width: default;
+max-width:255px;
+background-color: var(--main-gray);
+box-shadow:0px 18px 16px 0px rgba(0,0,0,0.6);
+
+}
+/* Style the links inside the dropdown */
+.dropdown-content a{
+float:right;
+color: var(--main-black);
+text-decoration:none;
+display:block;
+text-align:right;
+padding: ;
+width:100%;
+
+}
+/* Add a dark background on topnav links and the dropdown button on hover */
+.top-navbar a:hover, .dropdown:hover .dropbtn{
+background-color: var(--main-green);
+color:var(--main-white);
+
+}
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover{
+background-color:var(--main-green);
+color:var(--main-white);
+
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content{
+display:block;
+position:fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.new{
+  height: 120vh;
+  background-color:var(--main-blue);
+  text-align:center;
+  padding: 10rem 2rem;
+}
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width:100%;
+  grid-gap: 4rem;
+  max-width: 1280px;
+  margin:15px auto;
+  margin-bottom: 6rem;
+  border-style:dotted;
+
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.new2{
+  position:static;
+  height:120vh;
+  background-color:yellow;
+}
+footer{
+  position:static;
+  background-color:purple;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  height: 100vh;
+}

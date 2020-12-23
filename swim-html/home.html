@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/home/swim-html/css/all.css">
+    <script src="https://kit.fontawesome.com/82fca8133f.js" crossorigin="anonymous"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar-frame").style.top = "0";
+
+
+    }else {
+        document.getElementById("navbar-frame").style.top = "-8vh";
+
+      }
+
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</head>
+<body>
+
+
+  <div class="top-div">
+       <div class="top-div-link">
+        <i class="fas fa-user" style="font-size: 1rem;color:purple;"></i>
+        <a href="#">Sign in</a>
+        <span>|</span>
+        <a href="#">Register</a>
+
+    </div>
+
+  </div>
+
+   <div id="navbar-frame" class="navbar-frame">
+     <nav id="navbar" class="top-navbar">
+     <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-sort-down"></i> بدنسازی شنا
+
+        </button>
+        <div class="dropdown-content">
+            <a href="#">کل بدن</a>
+            <a href="#">بالا تنه/ پایین تنه</a>
+            <a href="#">تفکیکی</a>
+        </div>
+    </div>
+       <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-sort-down"></i> تکنیک شنا
+
+        </button>
+        <div class="dropdown-content">
+            <a href="#">شنا پروانه</a>
+            <a href="#">شنا کرال پشت</a>
+            <a href="#">شنا قورباغه</a>
+            <a href="#">شنا کرال سینه</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-sort-down"></i> انعطافپذیری شنا
+
+        </button>
+        <div class="dropdown-content">
+            <a href="#">کل بدن</a>
+            <a href="#">بالا تنه/ پایین تنه</a>
+            <a href="#">تفکیکی</a>
+        </div>
+    </div>
+     </nav>
+  </div>
+
+
+
+  <section class="new">
+        <div class="project-grid">
+        <a class="project" href="https://codepen.io/korosh-khosravi/pen/vYKpwRW" target="_blank">
+        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+        <p class="project-title">
+          <span class="code"><</span>
+            Tribute page
+          <span class="code">/></span>
+        </p>
+      </a>
+
+      <a class="project" href="https://codepen.io/korosh-khosravi/pen/vYKpwRW" target="_blank">
+        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+        <p class="project-title">
+          <span class="code"><</span>
+            Tribute page
+          <span class="code">/></span>
+        </p>
+      </a>
+    </div>
+  </section>
+
+
+<div class="new2">
+
+</div>
+<footer>
+</footer>
+
+
+</body>
+</html>

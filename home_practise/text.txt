@@ -1,0 +1,32 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f1f370ed435, pid=2664, tid=11192
+#
+# JRE version: OpenJDK Runtime Environment (11.0.7+10) (build 11.0.7+10-b765.64)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.7+10-b765.64, mixed mode, tiered, compressed oops, concurrent mark sweep gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4435]  ImageLocation::set_data(unsigned char*)+0x5
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (or dumping to /home/korosh/core.2664)
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -Dsun.tools.attach.tmp.only=true -XX:ErrorFile=/home/korosh/java_error_in_PYCHARM_%p.log -XX:HeapDumpPath=/home/korosh/java_error_in_PYCHARM.hprof -Didea.paths.selector=PyCharmCE2020.1 -Djb.vmOptionsFile=/home/korosh/.config/JetBrains/PyCharmCE2020.1/pycharm64.vmoptions -Didea.platform.prefix=PyCharmCore com.intellij.idea.Main
+
+Host: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz, 4 cores, 3G, Manjaro Linux
+Time: Sat Jul 18 14:48:28 2020 +0430 elapsed time: 17375 seconds (0d 4h 49m 35s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f1ea8070000):  JavaThread "XToolkt-Shutdown-Thread" [_thread_in_vm, id=11192, stack(0x00007f1e8f6c8000,0x00007f1e8f7c9000)]
+
+Stack: [0x00007f1e8f6c8000,0x00007f1e8f7c9000],  sp=0x00007f1e8f7c6048,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x4435]  ImageLocation::set_data(unsigned char*)+0x5
+C  [libjimage.so+0x54d1]  JIMAGE_FindResource+0xf1
+V  [libjvm.so+0x5a215f]
