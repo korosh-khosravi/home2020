@@ -80,3 +80,4 @@ result = kcalc(n)
 print(list(result))
 # for i in result:
 #     print(*i)
+# new
